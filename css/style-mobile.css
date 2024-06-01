@@ -1,0 +1,459 @@
+@media (width <= 374px) {
+  /* NAVIGATION */
+  .right-side{
+    background-color: rgb(39, 11, 63);
+    position: fixed;
+    right: -1000%;
+    height: 400px;
+    width: 250px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left .4s;
+  }
+
+  .container-profile::after{
+    content: '';
+  }
+
+  .nav-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+  }
+
+  .nav-list .link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .nav-list .link a:hover{
+    color: yellow;
+  }
+
+  .right-side .nav-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .show-menu{
+    right: 0;
+  }
+
+  /* ARTICLE */
+  .main-home{
+    margin: 0 10px;
+  }
+
+  /* HOME */
+
+  .section-home{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-image{
+    position: relative;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    padding-top: 30px;
+  }
+
+  .circle{
+    background-color: rgba(255, 255, 0, 0.849);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    box-shadow: inset -1px 3px 10px 0.6px rgba(0, 0, 0, 0.842);
+    display: grid;
+    place-items: center;
+  }
+
+  .sub-circle{
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: inset 1px -1px 10px 0.1px rgba(0, 0, 0, 0.842);
+  }
+
+  .home-image .img{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    bottom: 50px;
+  }
+
+  .heading-section{
+    color: #fff;
+    padding: 0 10px;
+  }
+
+  .heading-section .name{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;;
+    color: rgba(255, 255, 255, 0.705);
+  }
+
+  .heading-section .name span{
+    color: rgba(255, 255, 0, 0.705);
+    font-size: 20px;
+  }
+
+  .heading-section .title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 29px;
+  }
+
+  .heading-section .abstract{
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .button-bg{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(219, 219, 18);
+    border-radius: 5px;
+    align-self: center;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .button-talk{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    color: rgb(27, 6, 46);
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .button-talk:active{ 
+    top: 0px;
+    left: 0px;
+  }
+
+  .website-section{
+    align-self: center;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    gap: 14px;
+    margin: 10px 0 0 4px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .website-section ul{
+    display: flex;
+    gap: 10px;
+  }
+  .website-section ul li{
+    display: flex;
+  }
+  
+  .github-line-img,
+  .facebook-box-line-img,
+  .linkedin-box-line-img{
+    width: 33px;
+    padding: 1px;
+  }
+  
+  .item1,
+  .item2,
+  .item3{
+    display: flex;
+    background-color: rgb(223, 223, 19);
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .item1::after{
+    content: 'GitHub';
+    color: black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item2::after{
+    content: 'Facebook';
+    color:black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item3::after{
+    content: 'LinkedIn';
+    color:black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item1:hover::after,
+  .item2:hover::after,
+  .item3:hover::after{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+@media (375px <= width <= 425px) {
+  /* NAVIGATION */
+  .right-side{
+    background-color: rgb(39, 11, 63);
+    position: fixed;
+    right: -1000%;
+    height: 400px;
+    width: 250px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left .4s;
+  }
+
+  .container-profile::after{
+    content: '';
+  }
+
+  .nav-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+  }
+
+  .nav-list .link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .nav-list .link a:hover{
+    color: yellow;
+  }
+
+  .right-side .nav-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .show-menu{
+    right: 0;
+  }
+
+  /* ARTICLE */
+  .main-home{
+    margin: 0 10px;
+  }
+
+  /* HOME */
+
+  .section-home{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-image{
+    position: relative;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    padding-top: 30px;
+  }
+
+  .circle{
+    background-color: rgba(255, 255, 0, 0.849);
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    box-shadow: inset -1px 3px 10px 0.6px rgba(0, 0, 0, 0.842);
+    display: grid;
+    place-items: center;
+  }
+
+  .sub-circle{
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: inset 1px -1px 10px 0.1px rgba(0, 0, 0, 0.842);
+  }
+
+  .home-image .img{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    bottom: 50px;
+  }
+
+  .heading-section{
+    color: #fff;
+    padding: 0 10px;
+  }
+
+  .heading-section .name{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;;
+    color: rgba(255, 255, 255, 0.705);
+  }
+
+  .heading-section .name span{
+    color: rgba(255, 255, 0, 0.705);
+    font-size: 20px;
+  }
+
+  .heading-section .title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .heading-section .abstract{
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .button-bg{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(219, 219, 18);
+    border-radius: 5px;
+    align-self: center;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .button-talk{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    color: rgb(27, 6, 46);
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .button-talk:active{
+    top: 0px;
+    left: 0px;
+  }
+
+  .website-section{
+    align-self: center;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    gap: 14px;
+    margin: 10px 0 0 4px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .website-section ul{
+    display: flex;
+    gap: 10px;
+  }
+  .website-section ul li{
+    display: flex;
+  }
+  
+  .github-line-img,
+  .facebook-box-line-img,
+  .linkedin-box-line-img{
+    width: 33px;
+    padding: 1px;
+  }
+  
+  .item1,
+  .item2,
+  .item3{
+    display: flex;
+    background-color: rgb(223, 223, 19);
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .item1::after{
+    content: 'GitHub';
+    color: black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item2::after{
+    content: 'Facebook';
+    color:black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item3::after{
+    content: 'LinkedIn';
+    color:black;
+    font-size: 0px;
+    margin-right: 0px;
+    height: auto;
+    transition:font-size 0.3s ease, margin 0.3s ease;
+  }
+  
+  .item1:hover::after,
+  .item2:hover::after,
+  .item3:hover::after{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}

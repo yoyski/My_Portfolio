@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(17, 3, 29);
+  height: 3000px;
+  padding-top: 50px;
+}
+
+.navigation{
+  background-color: rgb(17, 3, 29);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  z-index: 100;
+}
+
+.navigation .nav-toggle{
+  cursor: pointer;
+}
+
+.profile-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid yellow;
+}
+
+.container-profile::after{
+  content: "Ferdinand A. Samarro Jr.";
+  color: yellow;
+  position: absolute;
+  line-height: 40px;
+  left: 50px;
+  font-size: 12px;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  text-wrap:nowrap;
+}
+
+.section-home{
+  display: flex;
+  gap: 10px;
+}
+
+.item1:hover{
+  background-color: #8957E5;
+}
+.item2:hover{
+  background-color: #0866ff;
+}
+
+.item3:hover{
+  background-color: #136bc4;
+}
