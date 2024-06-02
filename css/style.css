@@ -3,16 +3,26 @@
   padding: 0;
   font-family: verdana;
   box-sizing: border-box;
+  color: white
+}
+
+:root{
+  --primary-color: #1A1D2F;
+  --secondary-color: #757B8D;
+  --accent-color: #F39C12;
+  --text-color: #CCCCCC;
+  --subtle-bg: #FFFFF0;
+  --subtle-border: #708090;
 }
 
 body{
-  background-color: rgb(17, 3, 29);
+  background-color: var(--primary-color);
   height: 3000px;
   padding-top: 50px;
 }
 
 .navigation{
-  background-color: rgb(17, 3, 29);
+  background-color: var(--primary-color);
   position: fixed;
   left: 0;
   right: 0;
@@ -27,19 +37,20 @@ body{
 
 .navigation .nav-toggle{
   cursor: pointer;
+  width: 40px;
+  fill: var(--accent-color);
 }
 
 .profile-image{
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid yellow;
+  border: 3px solid var(--accent-color);
 }
 
 .container-profile::after{
   content: "Ferdinand A. Samarro Jr.";
-  color: yellow;
   position: absolute;
   line-height: 40px;
   left: 50px;

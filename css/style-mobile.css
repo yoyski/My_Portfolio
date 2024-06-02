@@ -1,7 +1,7 @@
-@media (width <= 374px) {
+@media (width <= 2560px) {
   /* NAVIGATION */
   .right-side{
-    background-color: rgb(39, 11, 63);
+    background-color: var(--secondary-color);
     position: fixed;
     right: -1000%;
     height: 400px;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     transition: left .4s;
+    border-radius: 0 0 0 10px;
   }
 
   .container-profile::after{
@@ -22,12 +23,12 @@
     list-style: none;
     text-decoration: none;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 4rem;
     align-items: center;
   }
 
   .nav-list .link a{
-    color: #fff;
+    color: var(--subtle-def);
     text-decoration: none;
     font-size: 20px;
     font-family: Verdana;
@@ -35,15 +36,16 @@
   }
 
   .nav-list .link a:hover{
-    color: yellow;
+    color: var(--accent-color);
   }
 
   .right-side .nav-close{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 35px;
+    top: 0;
+    right: 3px;
+    width: 45px;
     cursor: pointer;
+    color: var(--accent-color);
   }
 
   .show-menu{
@@ -61,6 +63,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 55px;
   }
 
   .home-image{
@@ -72,7 +75,7 @@
   }
 
   .circle{
-    background-color: rgba(255, 255, 0, 0.849);
+    background-color: var(--accent-color);
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -82,7 +85,7 @@
   }
 
   .sub-circle{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--subtle-bg);
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -98,41 +101,41 @@
   }
 
   .heading-section{
-    color: #fff;
     padding: 0 10px;
   }
 
   .heading-section .name{
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
-    margin-bottom: 10px;;
-    color: rgba(255, 255, 255, 0.705);
+    margin-bottom: 10px;
+    color: var(--text-color);
   }
 
   .heading-section .name span{
-    color: rgba(255, 255, 0, 0.705);
-    font-size: 20px;
+    color: var(--accent-color);
+    font-size: 15px;
   }
 
   .heading-section .title{
     text-align: center;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 29px;
+    font-size: 25px;
+    color: var(--text-color);
   }
 
   .heading-section .abstract{
-    color: rgba(255, 255, 255, 0.705);
-    font-size: 11px;
+    color: var(--text-color);
+    font-size: 10px;
     margin-top: 10px;
     text-align: center;
   }
 
   .button-bg{
-    width: 150px;
-    height: 50px;
-    background-color: rgb(219, 219, 18);
-    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    background-color: var(--subtle-bg);
+    border-radius: 3px;
     align-self: center;
     position: relative;
     margin-top: 30px;
@@ -140,14 +143,14 @@
 
   .button-talk{
     position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 150px;
-    height: 50px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid yellow;
-    color: rgb(27, 6, 46);
+    top: -4px;
+    left: -4px;
+    width: 130px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    border: 0.5px solid var(--accent-color);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 15px;
   }
@@ -163,7 +166,7 @@
     height: 40px;
     display: flex;
     gap: 14px;
-    margin: 10px 0 0 4px;
+    margin: 0 0 0 0;
     justify-items: center;
     align-items: center;
   }
@@ -179,22 +182,22 @@
   .github-line-img,
   .facebook-box-line-img,
   .linkedin-box-line-img{
-    width: 33px;
+    width: 30px;
     padding: 1px;
+    fill: var(--text-color);
   }
   
   .item1,
   .item2,
   .item3{
     display: flex;
-    background-color: rgb(223, 223, 19);
+    background-color: var(--accent-color);
     border-radius: 5px;
     align-items: center;
   }
   
   .item1::after{
     content: 'GitHub';
-    color: black;
     font-size: 0px;
     margin-right: 0px;
     height: auto;
@@ -203,7 +206,6 @@
   
   .item2::after{
     content: 'Facebook';
-    color:black;
     font-size: 0px;
     margin-right: 0px;
     height: auto;
@@ -212,248 +214,139 @@
   
   .item3::after{
     content: 'LinkedIn';
-    color:black;
     font-size: 0px;
     margin-right: 0px;
     height: auto;
     transition:font-size 0.3s ease, margin 0.3s ease;
   }
-  
+
   .item1:hover::after,
   .item2:hover::after,
   .item3:hover::after{
     font-size: 15px;
     font-weight: bold;
     margin-right: 5px;
-  }
-}
-
-@media (375px <= width <= 425px) {
-  /* NAVIGATION */
-  .right-side{
-    background-color: rgb(39, 11, 63);
-    position: fixed;
-    right: -1000%;
-    height: 400px;
-    width: 250px;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: left .4s;
+    color: var(--text-color);
   }
 
-  .container-profile::after{
-    content: '';
-  }
+  /* ABOUT */
 
-  .nav-list{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    flex-direction: column;
-    row-gap: 3rem;
-    align-items: center;
-  }
-
-  .nav-list .link a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Verdana;
+  .section1 .about-me-text{
+    font-size: 30px;
     font-weight: bold;
+    color: var(--text-color);
   }
 
-  .nav-list .link a:hover{
-    color: yellow;
+  .section1 .about-me{
+    font-size: 13px;
+    color: var(--text-color);
   }
 
-  .right-side .nav-close{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 35px;
+  .section2 ul{
+    display: flex;
+    margin-top: 17px;
+    justify-content:start;
+    gap: 15px;
+    list-style: none;
+  }
+
+  .section2 ul li{
+    position: relative;
+    color: var(--text-color);
+    font-size: 15px;
     cursor: pointer;
   }
 
-  .show-menu{
-    right: 0;
+  .section2 ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
   }
 
-  /* ARTICLE */
-  .main-home{
-    margin: 0 10px;
+  .section2 ul li:hover::after{
+    width: 80%;
   }
 
-  /* HOME */
-
-  .section-home{
+  /* SERVICE */
+  /* .section2{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    row-gap: 30px;
+    margin: 30px 10px 0 10px;
   }
 
-  .home-image{
-    position: relative;
-    display: grid;
-    place-items: center;
-    justify-self: center;
-    padding-top: 30px;
+  .section2 .div{
+    background-color: var(--primary-color);
+    box-shadow: 1px -1px 7px 1px rgba(0, 0, 0, 0.842);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .circle{
-    background-color: rgba(255, 255, 0, 0.849);
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    box-shadow: inset -1px 3px 10px 0.6px rgba(0, 0, 0, 0.842);
-    display: grid;
-    place-items: center;
+  .section2 .div:hover{
+    scale: 1.03;
   }
 
-  .sub-circle{
-    background-color: rgb(255, 255, 255);
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    box-shadow: inset 1px -1px 10px 0.1px rgba(0, 0, 0, 0.842);
+  .div .title{
+    color: var(--accent-color);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
   }
 
-  .home-image .img{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    bottom: 50px;
+  .div .service-icon{
+    width: 30px;
+    align-self: center;
+    fill: var(--secondary-color);
+    margin: 10px 0px;
   }
 
-  .heading-section{
-    color: #fff;
-    padding: 0 10px;
-  }
+  .div .article-service{
+    font-size: 13px;
+    color: var(--text-color);
+    text-align: center;
+  } */
+
+}
+
+@media (375px <= width <= 2560px) {
 
   .heading-section .name{
     font-size: 15px;
-    text-align: center;
-    margin-bottom: 10px;;
-    color: rgba(255, 255, 255, 0.705);
   }
 
   .heading-section .name span{
-    color: rgba(255, 255, 0, 0.705);
     font-size: 20px;
   }
 
   .heading-section .title{
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: bold;
     font-size: 35px;
   }
 
   .heading-section .abstract{
-    color: rgba(255, 255, 255, 0.705);
     font-size: 13px;
-    margin-top: 10px;
-    text-align: center;
   }
 
   .button-bg{
     width: 150px;
     height: 50px;
-    background-color: rgb(219, 219, 18);
-    border-radius: 5px;
-    align-self: center;
-    position: relative;
-    margin-top: 30px;
   }
 
   .button-talk{
-    position: absolute;
-    top: -5px;
-    left: -5px;
     width: 150px;
     height: 50px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid yellow;
-    color: rgb(27, 6, 46);
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .button-talk:active{
-    top: 0px;
-    left: 0px;
-  }
-
-  .website-section{
-    align-self: center;
-    width: fit-content;
-    height: 40px;
-    display: flex;
-    gap: 14px;
-    margin: 10px 0 0 4px;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .website-section ul{
-    display: flex;
-    gap: 10px;
-  }
-  .website-section ul li{
-    display: flex;
   }
   
   .github-line-img,
   .facebook-box-line-img,
   .linkedin-box-line-img{
-    width: 33px;
-    padding: 1px;
+    width: 35px;
   }
-  
-  .item1,
-  .item2,
-  .item3{
-    display: flex;
-    background-color: rgb(223, 223, 19);
-    border-radius: 5px;
-    align-items: center;
-  }
-  
-  .item1::after{
-    content: 'GitHub';
-    color: black;
-    font-size: 0px;
-    margin-right: 0px;
-    height: auto;
-    transition:font-size 0.3s ease, margin 0.3s ease;
-  }
-  
-  .item2::after{
-    content: 'Facebook';
-    color:black;
-    font-size: 0px;
-    margin-right: 0px;
-    height: auto;
-    transition:font-size 0.3s ease, margin 0.3s ease;
-  }
-  
-  .item3::after{
-    content: 'LinkedIn';
-    color:black;
-    font-size: 0px;
-    margin-right: 0px;
-    height: auto;
-    transition:font-size 0.3s ease, margin 0.3s ease;
-  }
-  
-  .item1:hover::after,
-  .item2:hover::after,
-  .item3:hover::after{
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 5px;
-  }
+
 }
