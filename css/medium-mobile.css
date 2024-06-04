@@ -1,0 +1,35 @@
+@media (375px <= width <= 2560px) {
+
+  .heading-section .name{
+    font-size: 15px;
+  }
+
+  .heading-section .name span{
+    font-size: 20px;
+  }
+
+  .heading-section .title{
+    font-size: 35px;
+  }
+
+  .heading-section .abstract{
+    font-size: 13px;
+  }
+
+  .button-bg{
+    width: 150px;
+    height: 50px;
+  }
+
+  .button-talk{
+    width: 150px;
+    height: 50px;
+  }
+  
+  .github-line-img,
+  .facebook-box-line-img,
+  .linkedin-box-line-img{
+    width: 35px;
+  }
+
+}
