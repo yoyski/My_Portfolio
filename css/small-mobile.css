@@ -145,11 +145,15 @@
 
   .wrapper {
     display: inline-flex;
+
   }
 
   .wrapper .dynamic-txts{
-    line-height:40px;
+    line-height: 40px;
     height: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     overflow: hidden;
   }
 
@@ -163,7 +167,7 @@
 
   @keyframes slide {
     100%{
-      top: -80px
+      top: -102px;
     }
   }
   .dynamic-txts li span{
@@ -174,7 +178,7 @@
   .dynamic-txts li span::after{
     content: '';
     position: absolute;
-    top: 0;
+    top: 0;;
     left: 0;
     height: 100%;
     width: 100%;
