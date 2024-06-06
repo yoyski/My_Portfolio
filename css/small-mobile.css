@@ -143,6 +143,53 @@
     font-family: var(--font-hl);
   }
 
+  .wrapper {
+    display: inline-flex;
+  }
+
+  .wrapper .dynamic-txts{
+    line-height:40px;
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .dynamic-txts li{
+    list-style: none;
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    animation: slide 10s steps(2) infinite;
+  }
+
+  @keyframes slide {
+    100%{
+      top: -80px
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    color: var(--text-color);
+  }
+
+  .dynamic-txts li span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--accent-color);
+    background-color: var(--primary-color);
+    animation: typing 5s steps(15) infinite;
+  }
+
+  @keyframes typing {
+    50%{
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+
   .heading-section .abstract{
     color: var(--text-color);
     font-family: var(--font-hl);
@@ -322,7 +369,7 @@
   }
   .education-pic{
     margin-top: 10px;
-    width: 200px;
+    width: 270px;
     display: inline;
   }
 
@@ -334,6 +381,7 @@
     font-family: var(--font-hl);
     text-align: center;
     font-size: 12px;
+    width: 250px;
   }
 
   .education-detail a{
